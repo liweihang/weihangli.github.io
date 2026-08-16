@@ -1,107 +1,101 @@
-# Simple GitHub Pages Personal Website
+# Weihang (Leo) Li — GitHub Pages Personal Website
 
-This is a plain HTML/CSS website. No build tools are required.
+A simple static academic/personal website built with plain HTML + CSS. There is no framework, build step, database, or server to maintain.
 
-## 1. Publish it with GitHub Pages
+## Included in this packet
 
-1. Create a GitHub repository. The simplest user-site name is `YOUR_USERNAME.github.io`.
-2. Upload all files from this folder to the repository root.
+- Real profile photo
+- DroneSAR system photo
+- Compressed DroneSAR demo video suitable for GitHub Pages
+- Soil-moisture map
+- SNOOPI mission image
+- Research and publication pages
+- Dedicated **Experience** page
+- Qualcomm, Samsung, and Micron internship sections with company logos
+- Current PDF CV at `assets/cv/cv.pdf`
+
+Finance-related material is intentionally excluded.
+
+---
+
+## 1. Publish on GitHub Pages
+
+1. Create a GitHub repository. The simplest personal-site name is `YOUR_USERNAME.github.io`.
+2. Upload **the contents of this folder** to the repository root. `index.html` should be at the top level.
 3. Open **Settings → Pages**.
 4. Under **Build and deployment**, select **Deploy from a branch**.
-5. Select `main` and `/(root)`, then save.
+5. Select branch `main` and folder `/(root)`, then save.
 6. Visit `https://YOUR_USERNAME.github.io`.
 
-## 2. Change your name and text
+---
 
-Open each `.html` file in GitHub and click the pencil/edit button.
-Search for `Your Name`, your placeholder university, email, GitHub URL, and other placeholder text.
-Edit it and click **Commit changes**.
+## 2. Main pages
 
-## 3. Change the profile photo
+- `index.html` — homepage, featured projects, industry-experience cards, demo video, recent news
+- `research.html` — DroneSAR, soil moisture, SoOp/SNOOPI, navigation/sensor fusion, current applied research
+- `experience.html` — Qualcomm, Samsung Semiconductor, and Micron internships
+- `publications.html` — selected papers/conference work
+- `cv.html` — web CV with downloadable PDF
 
-Option A — easiest:
+---
 
-1. Upload your photo to `assets/images/`, for example `profile.jpg`.
-2. In `index.html`, find:
+## 3. Media files
 
-```html
-<img class="profile-photo" src="assets/images/profile.svg" alt="Your Name">
-```
+Current media is under:
 
-3. Change it to:
+- `assets/images/profile.jpg`
+- `assets/images/dronesar-system.jpg`
+- `assets/images/dronesar-demo-poster.jpg`
+- `assets/images/soil-moisture-map.png`
+- `assets/images/snoopi-mission.png`
+- `assets/images/qualcomm-logo.svg`
+- `assets/images/samsung-logo.webp`
+- `assets/images/micron-logo.webp`
+- `assets/media/DroneSAR_Demo_web.mp4`
 
-```html
-<img class="profile-photo" src="assets/images/profile.jpg" alt="Your Name">
-```
+To replace an image later, overwrite it with the same filename or change the corresponding `src="..."` path in the HTML.
 
-You can use JPG, PNG, or WebP.
+---
 
-## 4. Add a research image
+## 4. Update internship / company experience
 
-Upload the image to `assets/images/`, for example `radar.jpg`, and add this where you want it:
+Edit `experience.html` for the detailed entries. The homepage contains shorter versions inside the **Industry Experience** section.
 
-```html
-<img src="assets/images/radar.jpg" alt="Research figure" style="max-width:100%;">
-```
+The public descriptions intentionally avoid proprietary implementation details.
 
-## 5. Update your CV
+---
 
-Upload your PDF as:
+## 5. Update the PDF CV
+
+The current CV is already included at:
 
 `assets/cv/cv.pdf`
 
-The CV page will then link to it automatically.
+To update it later, simply replace that file with a newer PDF using the same filename. The **Download PDF CV** button will continue working automatically.
 
-## 6. Add a new page
+---
 
-Example: add `teaching.html`.
+## 6. Add/update a publication
 
-1. Copy `research.html` and rename the copy to `teaching.html`.
-2. Change the page title and body content.
-3. In the navigation section of EVERY page, add:
+In `publications.html`, copy an existing publication `<article>` block, paste it into the correct year, and edit the title, authors, venue, and link.
 
-```html
-<a href="teaching.html">Teaching</a>
-```
+---
 
-After committing, the new page will be available at `/teaching.html`.
+## 7. Change colors/layout
 
-## 7. Remove a page
+Open `assets/css/style.css`. The main palette is at the top under `:root`.
 
-Delete the HTML file and remove its navigation link from the other pages.
+`--accent` controls the gold/brown highlight color.
 
-## 8. Change fonts, colors, spacing, and layout
+---
 
-Edit:
+## 8. Normal update workflow
 
-`assets/css/style.css`
-
-At the top, these variables control the main appearance:
-
-```css
-:root {
-  --bg: #ffffff;
-  --text: #1f2937;
-  --muted: #6b7280;
-  --line: #e5e7eb;
-  --accent: #1d4ed8;
-}
-```
-
-For example, change `--accent` to change the link color.
-
-## 9. Use your own domain
-
-In GitHub, open **Settings → Pages → Custom domain**, enter your domain, and save it. Then configure the DNS records at your domain provider according to GitHub Pages' current custom-domain documentation. Enable **Enforce HTTPS** after DNS validation succeeds.
-
-## 10. Normal editing workflow
-
-For small changes you do not need Git on your computer:
+For small changes you do not need Git installed locally:
 
 1. Open the repository on GitHub.
-2. Click a file.
-3. Click Edit (pencil icon).
-4. Make the change.
-5. Click Commit changes.
-
-GitHub Pages will publish the new version automatically.
+2. Click the file you want to change.
+3. Click the pencil/edit icon.
+4. Make the edit.
+5. Click **Commit changes**.
+6. GitHub Pages will automatically republish the site.

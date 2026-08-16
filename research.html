@@ -3,32 +3,174 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Research · Your Name</title>
+  <meta name="description" content="Research by Weihang (Leo) Li in UAV synthetic aperture radar, microwave remote sensing, GNSS signals of opportunity, and navigation sensor fusion.">
+  <title>Research · Weihang (Leo) Li</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 <header class="site-header">
   <div class="container nav">
-    <a class="brand" href="index.html">Your Name</a>
-    <nav class="nav-links">
-      <a href="index.html">Home</a><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="cv.html">CV</a>
+    <a class="brand" href="index.html">Weihang Li</a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a class="active" href="research.html">Research</a>
+      <a href="experience.html">Experience</a>
+      <a href="publications.html">Publications</a>
+      <a href="cv.html">CV</a>
     </nav>
   </div>
 </header>
+
 <main class="container">
-  <div class="page-header"><h1>Research</h1><p class="subtitle">A short overview of your research program.</p></div>
-  <section>
-    <div class="content-block">
-      <h2>Project / Topic One</h2>
-      <p>Describe the scientific question, method, and why the work matters.</p>
+  <div class="page-header">
+    <p class="eyebrow">Research</p>
+    <h1>From sensing hardware to geophysical and positioning products.</h1>
+    <p class="subtitle wide">My work connects radar instrumentation, signal processing, estimation, and field validation to build practical remote-sensing and navigation systems.</p>
+  </div>
+
+  <section class="research-project">
+    <div class="research-copy">
+      <p class="project-number">01 · DroneSAR</p>
+      <h2>UAV-Based Synthetic Aperture Radar</h2>
+      <p>
+        DroneSAR is a compact S-band synthetic aperture radar platform designed for flexible, high-resolution measurements at agricultural field scale.
+        I lead the end-to-end development effort, from system integration and flight experiments through signal processing and science-product generation.
+      </p>
+      <ul class="detail-list">
+        <li>S-band FMCW radar imaging from a multirotor UAV platform</li>
+        <li>Polarimetric calibration, motion compensation, and SAR image formation</li>
+        <li>Georeferencing and generation of calibrated, analysis-ready radar products</li>
+        <li>Field campaigns connecting radar observations with in-situ soil and vegetation measurements</li>
+      </ul>
+      <p class="link-row"><a href="https://docs.lib.purdue.edu/sydag/2025/posters/20/" target="_blank" rel="noopener">DroneSAR project abstract →</a></p>
     </div>
-    <div class="content-block">
-      <h2>Project / Topic Two</h2>
-      <p>Describe another project. You can add figures with an image tag, for example:</p>
-      <pre>&lt;img src="assets/images/project1.jpg" alt="Project figure" style="max-width:100%;"&gt;</pre>
+    <div class="research-visual">
+      <div class="research-media-stack">
+        <img src="assets/images/dronesar-system.jpg" alt="DroneSAR UAV-based synthetic aperture radar system">
+        <video controls preload="metadata" poster="assets/images/dronesar-demo-poster.jpg">
+          <source src="assets/media/DroneSAR_Demo_web.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <p class="image-note">DroneSAR platform photo and demo video.</p>
+    </div>
+  </section>
+
+  <section class="research-project reverse section-divider">
+    <div class="research-copy">
+      <p class="project-number">02 · Retrieval</p>
+      <h2>Soil Moisture & Agricultural Remote Sensing</h2>
+      <p>
+        A major goal of DroneSAR is to turn high-resolution backscatter measurements into useful geophysical products. My research develops and evaluates
+        soil-moisture retrieval methods across changing soil roughness, precipitation, and vegetation conditions, with an emphasis on rigorous field validation.
+      </p>
+      <ul class="detail-list">
+        <li>Physics-based and empirical soil-moisture retrieval</li>
+        <li>Bayesian estimation and uncertainty-aware retrieval methods</li>
+        <li>Time-series analysis across wetting and dry-down events</li>
+        <li>Extensions toward biomass and other agricultural products</li>
+      </ul>
+      <p class="link-row"><a href="publications.html">Related publications and conference papers →</a></p>
+    </div>
+    <div class="research-visual">
+      <img src="assets/images/soil-moisture-map.png" alt="Example soil moisture retrieval map from DroneSAR">
+      <p class="image-note">Example field-scale soil moisture map from UAV SAR observations.</p>
+    </div>
+  </section>
+
+  <section class="research-project section-divider">
+    <div class="research-copy">
+      <p class="project-number">03 · SoOp / GNSS-R</p>
+      <h2>Signals of Opportunity for Earth Observation</h2>
+      <p>
+        I have contributed to research using existing communication and navigation transmissions as illumination sources for remote sensing.
+        This includes work related to SNOOPI, a CubeSat demonstration of P-band signals-of-opportunity remote sensing, and participation in the CYGNSS research community.
+      </p>
+      <ul class="detail-list">
+        <li>Bistatic and passive microwave remote sensing</li>
+        <li>GNSS reflectometry and signals-of-opportunity concepts</li>
+        <li>Mission operations and science applications for small-satellite sensing</li>
+        <li>Soil moisture and land remote sensing across multiple microwave bands</li>
+      </ul>
+      <p class="link-row"><a href="https://doi.org/10.1016/j.asr.2023.10.050" target="_blank" rel="noopener">SNOOPI mission paper →</a></p>
+    </div>
+    <div class="research-visual">
+      <img src="assets/images/snoopi-mission.png" alt="SNOOPI CubeSat mission image">
+      <p class="image-note">SNOOPI mission concept for P-band signals-of-opportunity remote sensing.</p>
+    </div>
+  </section>
+
+  <section class="research-project reverse section-divider">
+    <div class="research-copy">
+      <p class="project-number">04 · Estimation</p>
+      <h2>Navigation & Multi-Sensor Fusion</h2>
+      <p>
+        My navigation work focuses on robust estimation when individual sensors become intermittent, biased, or locally accurate but globally drifting.
+        I am particularly interested in architectures that combine visual-inertial information with GNSS and other absolute measurements.
+      </p>
+      <ul class="detail-list">
+        <li>Visual-inertial odometry (VIO) and GNSS integration</li>
+        <li>Kalman filtering, smoothing, and factor-graph formulations</li>
+        <li>Error-state and stochastic sensor modeling</li>
+        <li>Performance evaluation under degraded sensing conditions</li>
+      </ul>
+    </div>
+    <div class="research-visual">
+      <div class="text-panel">
+        <h3>Current emphasis</h3>
+        <ul class="list-tight">
+          <li>Robust positioning in real-world environments</li>
+          <li>Architectures that blend relative and absolute sensors</li>
+          <li>Evaluation workflows for drift, bias, and degraded sensing</li>
+          <li>Bridging estimation theory with deployable systems</li>
+        </ul>
+      </div>
+      <p class="image-note">This area connects my academic work with applied industry-facing positioning problems.</p>
+    </div>
+  </section>
+
+  <section class="research-project section-divider">
+    <div class="research-copy">
+      <p class="project-number">05 · Industry</p>
+      <h2>Internship / Corporate Project Experience</h2>
+      <p>
+        In summer 2026, I joined Qualcomm as a <strong>Location Technology Intern</strong>. The public description here is intentionally high-level,
+        but the work aligns with my broader interests in positioning, navigation, estimation, and sensor fusion.
+      </p>
+      <ul class="detail-list">
+        <li>Applied positioning and sensor-fusion workflows</li>
+        <li>Analysis of system performance under challenging sensing conditions</li>
+        <li>Use of visual-inertial, inertial, and absolute measurements in location pipelines</li>
+        <li>Research-to-product thinking for deployable location technology</li>
+      </ul>
+      <p class="small-note">Because this is industry work, proprietary details are not included on the public site.</p>
+      <p class="link-row"><a href="experience.html">See Qualcomm, Samsung Semiconductor, and Micron internship experience →</a></p>
+    </div>
+    <div class="research-visual">
+      <div class="company-project-panel">
+        <div class="company-logo-wrap research-company-logo">
+          <img class="company-logo" src="assets/images/qualcomm-logo.svg" alt="Qualcomm logo">
+        </div>
+        <div class="text-panel company-copy-panel">
+          <p class="eyebrow">Applied research · Summer 2026</p>
+          <h3>Location Technology</h3>
+          <p>
+            The same estimation questions appear across remote sensing and navigation: how to combine imperfect measurements,
+            represent uncertainty, control drift, and turn raw observations into reliable products. My internship complements my academic work by applying these ideas in an industry location-technology setting.
+          </p>
+          <p class="small-note">Public description only; proprietary implementation details are intentionally omitted.</p>
+        </div>
+      </div>
     </div>
   </section>
 </main>
-<footer><div class="container">© Your Name</div></footer>
+
+<footer>
+  <div class="container footer-row">
+    <span>© <span id="year"></span> Weihang (Leo) Li</span>
+    <span>Hosted with GitHub Pages</span>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

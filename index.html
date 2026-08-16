@@ -3,17 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Personal academic website">
-  <title>Your Name</title>
+  <meta name="description" content="Weihang (Leo) Li — Ph.D. Candidate at Purdue University working on radar remote sensing, synthetic aperture radar, signals of opportunity, and positioning/sensor fusion.">
+  <meta name="author" content="Weihang Li">
+  <title>Weihang (Leo) Li</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 <header class="site-header">
   <div class="container nav">
-    <a class="brand" href="index.html">Your Name</a>
+    <a class="brand" href="index.html">Weihang Li</a>
     <nav class="nav-links" aria-label="Main navigation">
-      <a href="index.html">Home</a>
+      <a class="active" href="index.html">Home</a>
       <a href="research.html">Research</a>
+      <a href="experience.html">Experience</a>
       <a href="publications.html">Publications</a>
       <a href="cv.html">CV</a>
     </nav>
@@ -22,56 +24,229 @@
 
 <main class="container">
   <section class="hero">
-    <img class="profile-photo" src="assets/images/profile.svg" alt="Your Name">
+    <img class="profile-photo" src="assets/images/profile.jpg" alt="Weihang (Leo) Li portrait">
     <div>
-      <h1>Your Name</h1>
-      <p class="subtitle">Ph.D. Student / Researcher · University or Organization</p>
-      <p>
-        Write a short introduction here. In 2–4 sentences, explain your research interests,
-        current position, and the kinds of problems you work on.
+      <p class="eyebrow">Radar · Remote Sensing · Navigation</p>
+      <h1>Weihang <span class="muted-name">(Leo)</span> Li</h1>
+      <p class="subtitle">Ph.D. Candidate in Aeronautics and Astronautics · Purdue University</p>
+      <p class="lead">
+        I develop sensing and estimation methods for Earth observation and positioning, with a focus on
+        UAV-based synthetic aperture radar (SAR), microwave remote sensing, GNSS/signals of opportunity,
+        and multi-sensor navigation.
       </p>
       <div class="quick-links">
         <a class="button primary" href="research.html">Research</a>
+        <a class="button" href="experience.html">Experience</a>
         <a class="button" href="publications.html">Publications</a>
-        <a class="button" href="mailto:your.email@example.com">Email</a>
-        <a class="button" href="https://github.com/yourusername">GitHub</a>
+        <a class="button" href="https://scholar.google.com/citations?user=dfO99kAAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        <a class="button" href="https://www.linkedin.com/in/weihang-li-purdue/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="button" href="mailto:li2653@purdue.edu">Email</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-divider two-col">
+    <div>
+      <h2>About</h2>
+    </div>
+    <div>
+      <p>
+        I am a Ph.D. candidate in Purdue University's School of Aeronautics and Astronautics and a member of the
+        <a href="https://engineering.purdue.edu/RNL/" target="_blank" rel="noopener">Radio Navigation Laboratory</a>.
+        My work connects instrumentation, signal processing, geospatial products, and estimation methods for both
+        Earth remote sensing and positioning applications.
+      </p>
+      <p>
+        I lead the <strong>DroneSAR</strong> effort, an S-band UAV-based synthetic aperture radar platform for high-resolution
+        agricultural remote sensing. My research spans radar calibration, SAR image formation, georeferencing,
+        field experiments, and soil-moisture retrieval. I have also contributed to <strong>SNOOPI</strong>, <strong>CYGNSS</strong>, and
+        related signals-of-opportunity remote sensing efforts.
+      </p>
+      <p>
+        My industry experience spans <strong>location technology and sensor fusion at Qualcomm</strong>,
+        <strong>GNSS system development at Samsung Semiconductor</strong>, and <strong>semiconductor dry-etch process development at Micron Technology</strong>.
+        These roles have given me experience carrying modeling, simulation, sensing, and data-analysis methods into product-oriented engineering environments.
+      </p>
+    </div>
+  </section>
+
+  <section class="section-divider">
+    <div class="section-heading-row">
+      <h2>Featured Projects</h2>
+      <a href="research.html">See all research →</a>
+    </div>
+    <div class="feature-grid">
+      <article class="feature-card">
+        <img src="assets/images/dronesar-system.jpg" alt="DroneSAR UAV platform with radar payload">
+        <div class="feature-body">
+          <span class="feature-tag">DroneSAR</span>
+          <h3>UAV Synthetic Aperture Radar</h3>
+          <p>Design and development of an S-band UAV SAR system for high-resolution agricultural remote sensing and field-scale mapping.</p>
+        </div>
+      </article>
+
+      <article class="feature-card">
+        <img src="assets/images/soil-moisture-map.png" alt="Soil moisture retrieval map">
+        <div class="feature-body">
+          <span class="feature-tag">Retrieval</span>
+          <h3>Soil Moisture Products</h3>
+          <p>Turning calibrated radar observations into geophysical products through retrieval models, uncertainty-aware estimation, and field validation.</p>
+        </div>
+      </article>
+
+      <article class="feature-card">
+        <img src="assets/images/snoopi-mission.png" alt="SNOOPI signals-of-opportunity mission image">
+        <div class="feature-body">
+          <span class="feature-tag">SoOp / GNSS-R</span>
+          <h3>Signals of Opportunity</h3>
+          <p>Remote sensing using existing communication and navigation transmissions, including CubeSat-scale sensing concepts such as SNOOPI.</p>
+        </div>
+      </article>
+
+
+    </div>
+  </section>
+
+  <section class="section-divider">
+    <div class="section-heading-row">
+      <h2>Industry Experience</h2>
+      <a href="experience.html">View detailed experience →</a>
+    </div>
+    <div class="experience-card-grid">
+      <article class="experience-card">
+        <div class="experience-logo-box">
+          <img src="assets/images/qualcomm-logo.svg" alt="Qualcomm logo">
+        </div>
+        <div class="experience-card-body">
+          <span class="feature-tag">2026 · Santa Clara, CA</span>
+          <h3>Position Engineer, Location Tech</h3>
+          <p>Sensor fusion using VIO, IMU, and GNSS for mobile and extended-reality positioning, together with sensor noise and error characterization.</p>
+        </div>
+      </article>
+
+      <article class="experience-card">
+        <div class="experience-logo-box">
+          <img src="assets/images/samsung-logo.webp" alt="Samsung logo">
+        </div>
+        <div class="experience-card-body">
+          <span class="feature-tag">2023 · San Jose, CA</span>
+          <h3>SoC Location System Engineer</h3>
+          <p>Modeled TCXO phase noise and evaluated its impact on GNSS acquisition, signal quality, and tracking-loop stability.</p>
+        </div>
+      </article>
+
+      <article class="experience-card">
+        <div class="experience-logo-box">
+          <img src="assets/images/micron-logo.webp" alt="Micron Technology logo">
+        </div>
+        <div class="experience-card-body">
+          <span class="feature-tag">2022 · Boise, ID</span>
+          <h3>Dry Etch Process Development Engineer</h3>
+          <p>Worked on DRAM/HRAM dry-etch process development, including word-line metal process studies, data analysis, and machine-learning-based etch-rate estimation.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section-divider">
+    <h2>Project Spotlight</h2>
+    <div class="video-panel">
+      <div>
+        <video controls preload="metadata" poster="assets/images/dronesar-demo-poster.jpg">
+          <source src="assets/media/DroneSAR_Demo_web.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="text-panel">
+        <p class="eyebrow">Featured media</p>
+        <h3>DroneSAR Demo</h3>
+        <p>
+          A short demonstration video of the DroneSAR platform and field operation context. This project integrates the radar,
+          UAV platform, calibration workflow, SAR processing chain, and downstream science products.
+        </p>
+        <div class="inline-links">
+          <a href="research.html">Research details</a>
+          <a href="publications.html">Publications</a>
+          <a href="https://docs.lib.purdue.edu/sydag/2025/posters/20/" target="_blank" rel="noopener">Project abstract</a>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="section-divider">
-    <h2>About</h2>
-    <p>
-      Add a slightly longer biography here. You can mention your education, research group,
-      collaborators, professional interests, and current projects.
-    </p>
-  </section>
-
-  <section class="section-divider">
-    <h2>Research Highlights</h2>
-    <div class="grid">
+    <div class="section-heading-row">
+      <h2>Research Focus</h2>
+    </div>
+    <div class="grid grid-4">
       <article class="card">
-        <h3>Research Area One</h3>
-        <p>One or two sentences describing this research area or project.</p>
+        <span class="card-kicker">01</span>
+        <h3>UAV Synthetic Aperture Radar</h3>
+        <p>Low-altitude S-band SAR systems, calibration, motion compensation, image formation, and georeferenced radar products.</p>
       </article>
       <article class="card">
-        <h3>Research Area Two</h3>
-        <p>One or two sentences describing this research area or project.</p>
+        <span class="card-kicker">02</span>
+        <h3>Microwave Remote Sensing</h3>
+        <p>Retrieval of soil moisture and vegetation properties from high-resolution radar observations for precision agriculture.</p>
+      </article>
+      <article class="card">
+        <span class="card-kicker">03</span>
+        <h3>GNSS & Signals of Opportunity</h3>
+        <p>GNSS reflectometry and passive/bistatic sensing concepts including SNOOPI and related Earth-observation applications.</p>
+      </article>
+      <article class="card">
+        <span class="card-kicker">04</span>
+        <h3>Navigation & Sensor Fusion</h3>
+        <p>Probabilistic estimation and fusion of complementary navigation sensors, including GNSS and visual-inertial information.</p>
       </article>
     </div>
   </section>
 
   <section class="section-divider">
-    <h2>Recent News</h2>
-    <ul class="list">
-      <li><strong>Aug 2026:</strong> Add a recent conference, award, paper, or project update.</li>
-      <li><strong>Jul 2026:</strong> Add another update here.</li>
-    </ul>
+    <div class="section-heading-row">
+      <h2>Recent News</h2>
+      <a href="publications.html">View publications →</a>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">Aug 2026</div>
+        <div><strong>Second Place, IEEE IGARSS Student Prize Paper Award.</strong> Recognized for “Soil Moisture Retrieval from a UAV-based S-Band Synthetic Aperture Radar in Bare Agricultural Fields.”</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">Aug 2026</div>
+        <div>Presented UAV-SAR and soil-moisture retrieval research at IEEE IGARSS 2026, including an oral Student Prize Paper presentation and a Bayesian retrieval poster.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">Summer 2026</div>
+        <div>Joined Qualcomm as a Location Technology Intern, working in the broader area of positioning, location technology, and sensor fusion.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2025</div>
+        <div>Presented DroneSAR work on UAV-based synthetic aperture radar for soil-moisture remote sensing at IEEE IGARSS and Purdue's Symposium on Digital Agriculture.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2024</div>
+        <div>Co-authored the SNOOPI mission paper in <em>Advances in Space Research</em>, describing P-band signals-of-opportunity remote sensing from a CubeSat.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-divider contact-strip">
+    <div>
+      <p class="eyebrow">Contact</p>
+      <h2>Interested in radar remote sensing, SAR, GNSS, or sensor fusion?</h2>
+    </div>
+    <div class="contact-actions">
+      <a class="button primary" href="mailto:li2653@purdue.edu">li2653@purdue.edu</a>
+      <a class="button" href="https://engineering.purdue.edu/RNL/people/" target="_blank" rel="noopener">Purdue RNL</a>
+    </div>
   </section>
 </main>
 
 <footer>
-  <div class="container">© <span id="year"></span> Your Name. Hosted with GitHub Pages.</div>
+  <div class="container footer-row">
+    <span>© <span id="year"></span> Weihang (Leo) Li</span>
+    <span>Hosted with GitHub Pages</span>
+  </div>
 </footer>
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>

@@ -3,25 +3,184 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CV · Your Name</title>
+  <meta name="description" content="Curriculum vitae summary for Weihang (Leo) Li.">
+  <title>CV · Weihang (Leo) Li</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 <header class="site-header">
   <div class="container nav">
-    <a class="brand" href="index.html">Your Name</a>
-    <nav class="nav-links">
-      <a href="index.html">Home</a><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="cv.html">CV</a>
+    <a class="brand" href="index.html">Weihang Li</a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="experience.html">Experience</a>
+      <a href="publications.html">Publications</a>
+      <a class="active" href="cv.html">CV</a>
     </nav>
   </div>
 </header>
+
 <main class="container">
-  <div class="page-header"><h1>Curriculum Vitae</h1><p class="subtitle">Download the latest PDF version of my CV.</p></div>
-  <section>
-    <p><a class="button primary" href="assets/cv/cv.pdf">Download CV (PDF)</a></p>
-    <p class="meta">Put your file at <code>assets/cv/cv.pdf</code>. If the file has a different name, change the link above.</p>
+  <div class="page-header cv-header">
+    <div>
+      <p class="eyebrow">Curriculum Vitae</p>
+      <h1>Weihang (Leo) Li</h1>
+      <p class="subtitle">Radar Remote Sensing · GNSS · Navigation · Sensor Fusion</p>
+    </div>
+    <div class="cv-actions">
+      <a class="button" href="mailto:li2653@purdue.edu">Email</a>
+      <a class="button" href="https://www.linkedin.com/in/weihang-li-purdue/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="button" href="https://scholar.google.com/citations?user=dfO99kAAAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar</a>
+      <a class="button primary" href="assets/cv/cv.pdf">Download PDF CV</a>
+    </div>
+  </div>
+
+  <section class="cv-section section-divider">
+    <div class="cv-label">Education</div>
+    <div>
+      <h2>Purdue University</h2>
+      <div class="cv-entry">
+        <div>
+          <h3>Ph.D. Candidate · Aeronautical & Astronautical Engineering / Electrical Engineering</h3>
+          <p class="meta">Research areas: Earth remote sensing, radar systems, GNSS systems, communication systems, and digital signal processing.</p>
+        </div>
+        <div class="cv-date">2022 – Dec 2026 (expected)</div>
+      </div>
+      <div class="cv-entry">
+        <div>
+          <h3>M.S. · Aeronautical & Astronautical Engineering</h3>
+          <p class="meta">Systems and Aerodynamics</p>
+        </div>
+        <div class="cv-date">2021 – 2022</div>
+      </div>
+      <div class="cv-entry">
+        <div>
+          <h3>B.S. · Aeronautical & Astronautical Engineering</h3>
+          <p class="meta">Systems Engineering</p>
+        </div>
+        <div class="cv-date">2017 – 2020</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cv-section section-divider">
+    <div class="cv-label">Industry</div>
+    <div>
+      <h2>Internship Experience</h2>
+
+      <div class="cv-logo-row">
+        <div class="cv-logo-box"><img src="assets/images/qualcomm-logo.svg" alt="Qualcomm logo"></div>
+        <div>
+          <h3>Position Engineer, Location Tech · Qualcomm</h3>
+          <p class="meta">Santa Clara, California</p>
+          <p>Sensor fusion between VIO, IMU, and GNSS for mobile and extended-reality positioning; sensor noise and error characterization.</p>
+        </div>
+        <div class="cv-date">Jun – Sep 2026</div>
+      </div>
+
+      <div class="cv-logo-row">
+        <div class="cv-logo-box"><img src="assets/images/samsung-logo.webp" alt="Samsung logo"></div>
+        <div>
+          <h3>SoC Location System Engineer, Connectivity Lab · Samsung Semiconductor</h3>
+          <p class="meta">San Jose, California</p>
+          <p>TCXO phase-noise simulation and GNSS system analysis, including signal acquisition, tracking-loop stability, MATLAB modeling, and C++ hardware-aligned simulation.</p>
+        </div>
+        <div class="cv-date">May – Aug 2023</div>
+      </div>
+
+      <div class="cv-logo-row">
+        <div class="cv-logo-box"><img src="assets/images/micron-logo.webp" alt="Micron Technology logo"></div>
+        <div>
+          <h3>Dry Etch Process Development Engineer · Micron Technology</h3>
+          <p class="meta">Boise, Idaho</p>
+          <p>DRAM/HRAM dry-etch process development, word-line metal process studies, machine-learning-based etch-rate estimation, and cross-functional process integration.</p>
+        </div>
+        <div class="cv-date">May – Sep 2022</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cv-section section-divider">
+    <div class="cv-label">Research</div>
+    <div>
+      <h2>Selected Projects</h2>
+      <div class="cv-entry stacked">
+        <div>
+          <h3>DroneSAR — UAV-Based S-Band Synthetic Aperture Radar</h3>
+          <p>Lead development of a small-UAV fully polarimetric S-band SAR system, including system integration, calibration, SAR processing, interference filtering, motion compensation, georeferencing, and field campaigns.</p>
+        </div>
+      </div>
+      <div class="cv-entry stacked">
+        <div>
+          <h3>Soil Moisture & Biomass Retrieval</h3>
+          <p>Development of retrieval algorithms using calibrated radar data and in-situ measurements, with current work extending toward uncertainty-aware retrieval and data assimilation.</p>
+        </div>
+      </div>
+      <div class="cv-entry stacked">
+        <div>
+          <h3>GNSS-R Synthetic Aperture Radar</h3>
+          <p>Concept and algorithm development for SAR processing using GNSS reflectometry signals, including satellite-position solutions and phased-array processing for directional ambiguity.</p>
+        </div>
+      </div>
+      <div class="cv-entry stacked">
+        <div>
+          <h3>CYGNSS Soil Moisture Data Assimilation</h3>
+          <p>Development of Ensemble Kalman Filter workflows for assimilating GNSS-R soil-moisture products into a hydrologic model for root-zone soil-moisture estimation.</p>
+        </div>
+      </div>
+      <div class="cv-entry stacked">
+        <div>
+          <h3>SNOOPI — P-Band Signals of Opportunity</h3>
+          <p>Algorithm development for an in-space demonstration of Earth remote sensing using P-band communication signals of opportunity.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cv-section section-divider">
+    <div class="cv-label">Awards</div>
+    <div>
+      <h2>Selected Recognition</h2>
+      <div class="cv-entry">
+        <div>
+          <h3>Second Place · IEEE IGARSS Student Prize Paper Award</h3>
+          <p class="meta">“Soil Moisture Retrieval from a UAV-based S-Band Synthetic Aperture Radar in Bare Agricultural Fields”</p>
+        </div>
+        <div class="cv-date">2026</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cv-section section-divider">
+    <div class="cv-label">Skills</div>
+    <div>
+      <h2>Technical Areas</h2>
+      <div class="tag-list">
+        <span>Synthetic Aperture Radar</span>
+        <span>FMCW Radar</span>
+        <span>Radar Signal Processing</span>
+        <span>Microwave Remote Sensing</span>
+        <span>Soil Moisture Retrieval</span>
+        <span>GNSS / GNSS-R</span>
+        <span>Signals of Opportunity</span>
+        <span>Sensor Fusion</span>
+        <span>VIO / IMU / GNSS</span>
+        <span>Kalman Filtering</span>
+        <span>Factor Graphs</span>
+        <span>MATLAB / C++ Simulation</span>
+        <span>Semiconductor Process Development</span>
+      </div>
+    </div>
   </section>
 </main>
-<footer><div class="container">© Your Name</div></footer>
+
+<footer>
+  <div class="container footer-row">
+    <span>© <span id="year"></span> Weihang (Leo) Li</span>
+    <span>Hosted with GitHub Pages</span>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

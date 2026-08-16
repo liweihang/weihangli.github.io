@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Industry experience of Weihang (Leo) Li in positioning and sensor fusion, GNSS system development, and semiconductor process development.">
+  <title>Experience · Weihang (Leo) Li</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">Weihang Li</a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a class="active" href="experience.html">Experience</a>
+      <a href="publications.html">Publications</a>
+      <a href="cv.html">CV</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <div class="page-header">
+    <p class="eyebrow">Industry Experience</p>
+    <h1>Applied engineering across positioning, GNSS, and semiconductor process development.</h1>
+    <p class="subtitle wide">
+      My internships complement my academic research with product-oriented engineering experience, ranging from sensor fusion and GNSS simulation to semiconductor manufacturing process development.
+    </p>
+  </div>
+
+  <section class="experience-detail">
+    <div class="experience-company-panel">
+      <img src="assets/images/qualcomm-logo.svg" alt="Qualcomm logo">
+    </div>
+    <div class="experience-content">
+      <span class="feature-tag">June 2026 – September 2026</span>
+      <h2>Qualcomm</h2>
+      <p class="experience-role">Position Engineer, Location Tech · Internship</p>
+      <p class="experience-meta">Santa Clara, California</p>
+      <p>
+        Work in location technology focused on multi-sensor positioning and the characterization of sensing errors for mobile and extended-reality applications.
+      </p>
+      <ul class="experience-bullets">
+        <li>Sensor fusion between visual-inertial odometry (VIO), IMU, and GNSS measurements.</li>
+        <li>Sensor noise and error characterization for positioning-system evaluation.</li>
+        <li>Analysis of relative and absolute sensing behavior, including drift and degraded-condition performance.</li>
+      </ul>
+      <p class="experience-source-note">Public-facing summary only; proprietary implementation details are intentionally omitted.</p>
+      <div class="company-links">
+        <a href="https://www.qualcomm.com/" target="_blank" rel="noopener">Qualcomm →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="experience-detail section-divider">
+    <div class="experience-company-panel">
+      <img src="assets/images/samsung-logo.webp" alt="Samsung logo">
+    </div>
+    <div class="experience-content">
+      <span class="feature-tag">May 2023 – August 2023</span>
+      <h2>Samsung Semiconductor</h2>
+      <p class="experience-role">SoC Location System Engineer, Connectivity Lab · Internship</p>
+      <p class="experience-meta">San Jose, California</p>
+      <p>
+        Developed and evaluated oscillator phase-noise models for GNSS receiver simulation, with emphasis on how TCXO behavior affects acquisition and tracking performance.
+      </p>
+      <ul class="experience-bullets">
+        <li>Performed simulation studies on the impact of TCXO phase noise on GNSS signal quality, acquisition, and tracking-loop stability.</li>
+        <li>Built a parameterized phase-noise generator for both MATLAB simulation and a C++ hardware-aligned simulation model.</li>
+        <li>Integrated the TCXO/phase-noise model into a GNSS signal simulator for candidate crystal evaluation.</li>
+      </ul>
+      <div class="company-links">
+        <a href="https://semiconductor.samsung.com/" target="_blank" rel="noopener">Samsung Semiconductor →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="experience-detail section-divider">
+    <div class="experience-company-panel">
+      <img src="assets/images/micron-logo.webp" alt="Micron Technology logo">
+    </div>
+    <div class="experience-content">
+      <span class="feature-tag">May 2022 – September 2022</span>
+      <h2>Micron Technology</h2>
+      <p class="experience-role">Dry Etch Process Development Engineer · Internship</p>
+      <p class="experience-meta">Boise, Idaho</p>
+      <p>
+        Worked on semiconductor dry-etch process development for memory-device structures, combining process experimentation, data analysis, and cross-functional engineering collaboration.
+      </p>
+      <ul class="experience-bullets">
+        <li>Contributed to DRAM/HRAM dry-etch process development, with focus on word-line metal etch processes across multiple structures.</li>
+        <li>Applied machine learning to estimate material etch rate from metal blanket-etch studies.</li>
+        <li>Collaborated with CVD, metrology, and wet-process teams on vehicle design, testing, and process characterization.</li>
+      </ul>
+      <p class="experience-source-note">Project details are kept at a high level because the work involved company IP and process-development information.</p>
+      <div class="company-links">
+        <a href="https://www.micron.com/" target="_blank" rel="noopener">Micron Technology →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-divider two-col">
+    <div><h2>Technical Thread</h2></div>
+    <div>
+      <p>
+        Although these internships span different application domains, they share a common engineering theme: building models from physical systems, characterizing uncertainty and failure modes, and using simulation or experimental data to improve system-level performance.
+      </p>
+      <p>
+        That perspective carries directly into my current work in radar remote sensing and navigation, where calibrated sensing, error modeling, signal processing, and robust estimation are central to turning measurements into useful products.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <span>© <span id="year"></span> Weihang (Leo) Li</span>
+    <span>Hosted with GitHub Pages</span>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
