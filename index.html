@@ -1,30 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Weihang Li</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal academic website">
+  <title>Your Name</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">Your Name</a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="cv.html">CV</a>
+    </nav>
+  </div>
+</header>
 
-    <h1>Weihang Li</h1>
+<main class="container">
+  <section class="hero">
+    <img class="profile-photo" src="assets/images/profile.svg" alt="Your Name">
+    <div>
+      <h1>Your Name</h1>
+      <p class="subtitle">Ph.D. Student / Researcher · University or Organization</p>
+      <p>
+        Write a short introduction here. In 2–4 sentences, explain your research interests,
+        current position, and the kinds of problems you work on.
+      </p>
+      <div class="quick-links">
+        <a class="button primary" href="research.html">Research</a>
+        <a class="button" href="publications.html">Publications</a>
+        <a class="button" href="mailto:your.email@example.com">Email</a>
+        <a class="button" href="https://github.com/yourusername">GitHub</a>
+      </div>
+    </div>
+  </section>
 
-    <h2>Ph.D. Candidate</h2>
-
+  <section class="section-divider">
+    <h2>About</h2>
     <p>
-        Aeronautical and Astronautical Engineering<br>
-        Purdue University
+      Add a slightly longer biography here. You can mention your education, research group,
+      collaborators, professional interests, and current projects.
     </p>
+  </section>
 
-    <p>
-        Research interests: Synthetic Aperture Radar,
-        GNSS Reflectometry, Remote Sensing,
-        and Satellite Communication.
-    </p>
+  <section class="section-divider">
+    <h2>Research Highlights</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Research Area One</h3>
+        <p>One or two sentences describing this research area or project.</p>
+      </article>
+      <article class="card">
+        <h3>Research Area Two</h3>
+        <p>One or two sentences describing this research area or project.</p>
+      </article>
+    </div>
+  </section>
 
+  <section class="section-divider">
+    <h2>Recent News</h2>
+    <ul class="list">
+      <li><strong>Aug 2026:</strong> Add a recent conference, award, paper, or project update.</li>
+      <li><strong>Jul 2026:</strong> Add another update here.</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <div class="container">© <span id="year"></span> Your Name. Hosted with GitHub Pages.</div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
-
 </html>
